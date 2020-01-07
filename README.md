@@ -46,7 +46,7 @@ With the shell script file created we must give the rights permissions to the fi
 We must allow the system to run the shell script without ask for sudo permissions.
 
 Opens the visudo utility:
-```sudo visudo```
+```sudo visudo```\
 Disable sudo ask: ```<your-user-here> ALL=(ALL) NOPASSWD: /path/to/your/shell/script/file.sh```
 
 
