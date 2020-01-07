@@ -53,7 +53,7 @@ Disable sudo ask: ```<your-user-here> ALL=(ALL) NOPASSWD: <your-service-file-nam
 ## Fourth step
 Last but not least, we must enable the service unit execute every boot.\
 ```
-chmod 664 /etc/systemd/system/disk-space-check.service
+chmod 664 /path/to/your/service/unit/file.service
 systemctl daemon-reload
 systemctl enable /path/to/your/service/unit/file.service
 ```
