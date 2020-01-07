@@ -47,7 +47,7 @@ We must allow the system to run the shell script without ask for sudo permission
 
 Opens the visudo utility:
 ```sudo visudo```
-Disable sudo ask: <your-user-here> ALL=(ALL) NOPASSWD: /path/to/your/shell/script/file.sh
+Disable sudo ask: ```<your-user-here> ALL=(ALL) NOPASSWD: /path/to/your/shell/script/file.sh```
 
 
 ## Fourth step
