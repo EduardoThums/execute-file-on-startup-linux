@@ -15,8 +15,8 @@ Create a shell script file on the exactly path used on the ```.service``` and wr
 ```
 #!/bin/bash
 
-VIVO_ADS_DIR_NAME=/tmp/vivoads
-UPLOADED_FILE_DIR_NAME=/tmp/vivoads/uploaded-files
+YOUR_PARENT_DIR_NAME=/path/to/your/parent/dir
+YOUR_CHILD_DIR_DIR_NAME=/path/to/your/child/dir
  
 generic_clean(){
     sudo rm -rf $1
@@ -30,13 +30,13 @@ generic_permissions(){
     sudo chmod 777 $1
 }
 
-generic_clean $VIVO_ADS_DIR_NAME
-generic_clean $UPLOADED_FILE_DIR_NAME
+generic_clean $YOUR_PARENT_DIR_NAME
+generic_clean $YOUR_CHILD_DIR_DIR_NAME
 
-generic_create $VIVO_ADS_DIR_NAME
-generic_create $UPLOADED_FILE_DIR_NAME
+generic_create $YOUR_PARENT_DIR_NAME
+generic_create $YOUR_CHILD_DIR_DIR_NAME
 
-generic_permissions $UPLOADED_FILE_DIR_NAME
+generic_permissions $YOUR_CHILD_DIR_DIR_NAME
 ```
 
 With the shell script file created we must give the rights permissions to the file using the chmod command. \
