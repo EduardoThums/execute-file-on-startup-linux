@@ -1,7 +1,7 @@
 # Execute file on Linux startup
 
 ## First step
-Create a *.service file on ```/etc/systemd/system/``` using the code below\
+Create a *.service file on ```/etc/systemd/system/``` using the code below
 ```
 [Service]
 ExecStart=/path/to/your/shell/script/file.sh
@@ -10,7 +10,7 @@ ExecStart=/path/to/your/shell/script/file.sh
 WantedBy=default.target
 ``` 
 ## Second step
-Create a shell script file on the exactly path used on the ```.service``` and write the below code into it.\
+Create a shell script file on the exactly path used on the ```.service``` and write the below code into it.
 
 ```
 #!/bin/bash
